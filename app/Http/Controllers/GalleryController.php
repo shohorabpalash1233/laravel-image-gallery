@@ -78,7 +78,7 @@ class GalleryController extends Controller
 
         $photos = DB::table('photos')->where('gallery_id', $id)->get();
 
-        return view('gallery.show', compact('gallery', 'photos'));
+        return view('gallery/show', compact('gallery', 'photos'));
     }
 
     /**
